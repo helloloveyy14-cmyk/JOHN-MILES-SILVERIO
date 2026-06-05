@@ -1,0 +1,286 @@
+/* =========================
+   MIGUELEO SPORTS BAR AND COFFEE SHOP
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#000102;
+    color:white;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+
+header{
+    background:#000000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+.logo img{
+    height:80px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#BC672A;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("../images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#BC672A;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#BC672A;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#8A4415;
+}
+
+/* SECTIONS */
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#BC672A;
+    margin-bottom:25px;
+    font-size:2.5rem;
+}
+
+/* INTRO */
+
+.intro p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:1.1rem;
+}
+
+/* CARDS */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#040202;
+    border:1px solid #BC672A;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:#BC672A;
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+/* TABLE */
+
+.menu-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.menu-table th{
+    background:#BC672A;
+    color:white;
+}
+
+.menu-table th,
+.menu-table td{
+    border:1px solid #444;
+    padding:15px;
+}
+
+.menu-table tr:nth-child(even){
+    background:#111;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* FORMS */
+
+form{
+    max-width:700px;
+    margin:auto;
+    background:#040202;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #BC672A;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+}
+
+textarea{
+    resize:none;
+    height:150px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#BC672A;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+button:hover{
+    background:#8A4415;
+}
+
+/* VIDEO */
+
+.video-section iframe{
+    border:none;
+    border-radius:15px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#000000;
+    text-align:center;
+    padding:30px;
+}
+
+footer h3{
+    color:#BC672A;
+    margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+}
